@@ -1,0 +1,339 @@
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 400dvh;
+    background-color: rgb(0, 0, 0);
+    font-family: "Microsoft yahei";
+    color: white;
+}
+i{
+    font-size: 75px;
+}
+h1{
+    font-size: 30px;
+}
+a{
+    font-family: "Microsoft yahei";
+    color: white;
+    text-decoration:none;
+}
+.header{
+    height: 15dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin-right: 20px;
+        }    
+    }
+    .right{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            font-size: 20px;
+            margin: 10px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.firstArea{
+    .pic1Area{
+        height: 120dvh;
+        position: relative;
+        img{
+            width: 100%;
+            height: 120dvh;
+            transition: 1.5s;
+        }
+        .why{
+            left:6%;
+            top: 6%;
+            position: absolute;
+            writing-mode:vertical-lr;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.354);
+            border-radius:10px ;
+            padding: 30px;
+            h1{
+                color:black;
+                letter-spacing:10px;
+                font-weight:bolder;
+                font-size: 45px;
+                animation: fadeInAnimation 1.7s forwards;
+            }
+        }
+        .reason{
+            width: 35%;
+            right:2%;
+            bottom: 30%;
+            position: absolute;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.856);
+            border-radius:10px ;
+            padding: 40px;
+            p{
+                color:black;
+                letter-spacing:5px;
+                font-weight:bolder;
+                font-size: 25px;
+                animation: fadeInAnimation 4.5s forwards;
+            }
+        }
+        &:hover>img{
+            opacity: 0.7;
+        }
+        &:hover>.why{
+            display: block;
+        }
+        &:hover>.reason{
+            display: block;
+        }
+    }
+}
+.secondArea{
+    height: 15dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 0% 4% 0;
+    font-size: 20px;
+    h1{
+        font-size: 35px;
+        letter-spacing:7px;
+    }
+    i{  
+        margin-bottom:2%;
+    }
+}
+.thirdArea{
+    height: 70dvh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .box{
+        width: 45%;
+        height: 50dvh;
+        margin-bottom: 80px;
+        background-color: rgba(255, 255, 255, 0.865);
+        // border: 10px white solid;
+        border-radius: 10px;
+    }
+    .pic2Area{
+        position: absolute;
+        top: 17%;
+        left: 13%;
+        border-radius: 10px;
+        img{
+            width: 570px;
+            height: 55dvh;
+            border-radius: 10px;
+        }
+    }
+    .context{
+        width: 35%;
+        height: 100%;
+        color: white;
+        border: solid 4px white;
+        border-radius: 10px;
+        writing-mode:vertical-lr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h1{
+            line-height: 1.5;
+            letter-spacing:2px;
+            width: 70%;
+            height: 88%;
+            font-size: 32px;
+        }
+        a{  
+            font-size: 24px;
+            position: absolute;
+            right: 35px;
+            bottom: 35px;
+            color: white;
+            border:1px solid white;
+            padding: 7px;
+            transition: 0.5s;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.175);
+                color: rgb(255, 174, 0);
+            }
+        }
+    }
+}
+
+
+.fourthArea{
+    height: 30dvh;
+    background-color: rgba(128, 128, 128, 0.388); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5%;
+    padding-top: 5%;
+
+    h1{
+        font-size: 45px;
+        letter-spacing:6px;
+    }
+    i{  
+        margin-bottom:2%;
+    }
+}
+
+.fifthArea{
+    height: 70dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8%;
+    padding-top: 4%;
+    background-color: rgba(128, 128, 128, 0.388); 
+    .card{
+        width: 30%;
+        height: 40dvh;
+        background-color: rgba(245, 222, 179, 0.635);
+        border-radius: 10px;
+        transition: 0.5s;
+        a{
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 25px;
+            text-decoration: none;
+            font-family: "Microsoft yahei";
+            letter-spacing:10px;
+            line-height: 1.8;
+            img{
+                width: 100%;
+                height: 250px;
+                border-radius:10px 10px 0 0;
+                
+            }
+            &:hover{
+                color: whitesmoke;
+            }
+        }
+        &:hover{
+            border: 2px solid red;
+            scale: 0.95;
+        }
+    }
+}
+
+.sixthArea{
+    height: 80dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Microsoft yahei";
+    .hireArea{
+        width: 80%;
+        height: 60dvh;
+        background-color: rgba(255, 255, 255, 0.265);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 3px solid bisque;
+        border-radius: 20px;
+        position: relative;
+        .hireText{
+            height: 100%;
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            h1{
+                color: white;
+                margin-bottom: 10px;
+                font-size: 40px;
+            }
+            p{
+                font-size: 23px;
+            }
+        }
+
+        img{
+            width: 530px;
+            height: 455px;
+            border-radius: 0 20px 20px 0;
+        }
+        a{
+            // background-color: antiquewhite;
+            position: absolute;
+            font-size: 25px;
+            bottom: 30px;
+            left: 33%;
+            padding: 1%;
+            text-decoration: none;
+            color:white;
+            border:1px solid white;
+            border-radius: 5px;
+            transition: 0.5s;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.175);
+                color: rgb(255, 174, 0);
+            }
+        }
+    }
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5%;
+    background-color:  rgba(128, 128, 128, 0.248);
+    h1{
+        letter-spacing:5px;
+        line-height: 1.5;
+    }
+    p{
+        font-size: 16px;
+        letter-spacing:3px;
+        line-height: 1.5;
+        color:white;
+    }
+}
+
+
+

@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: "Microsoft yahei";
+    color: white;
+}
+h1{
+    font-size: 30px;
+}
+i{
+    font-size: 75px;
+}
+a{
+    font-family: "Microsoft yahei";
+    color: white;
+    text-decoration:none;
+}
+.header{
+    height: 15dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin-right: 20px;
+        }    
+    }
+    .right{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            font-size: 20px;
+            margin: 10px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+
+.firstArea{
+    display: flex;
+
+    justify-content: center;
+    width: 100%;
+    height: 110dvh;
+    padding: 5%;
+    border-top: 1px solid white;
+    img{
+        margin-top: 12%;
+       
+        height: 55dvh;
+        width: 55%;
+    }
+    .text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        i{
+            margin-bottom: 2%;
+            font-size: 60px;
+        }
+        h1{
+            
+            font-size: 40px;
+        }
+        p{
+            letter-spacing: 5px;
+            line-height: 1.5;
+            font-size: 23px;
+            margin: 10px;
+        }
+        .info{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            
+            label{
+                letter-spacing: 5px;
+                margin: 10px 0px 10px 0px;
+                font-size: 23px;
+            }
+            input{
+                
+                width: 70%;
+                height: 25px;
+            }
+            button{
+                width: 90px;
+                height: 35px;
+                position: absolute;
+                bottom: 130px;
+                right: 70px;
+                font-size: 19px;
+                background-color: rgba(245, 222, 179, 0.854);
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5%;
+    background-color:  rgba(128, 128, 128, 0.248);
+    h1{
+        letter-spacing:5px;
+        line-height: 1.5;
+    }
+    p{
+        font-size: 16px;
+        letter-spacing:3px;
+        line-height: 1.5;
+        color:white;
+    }
+}
